@@ -31,7 +31,7 @@ dependencies {
 ext {
     bintrayRepo = 'Methods-Helper' //the maven repo name (created on bintray)
     bintrayName = 'commonmethods' //the name you want to give at your project on bintray
-    orgName = 'iqubalashraf' //your user name
+    orgName = 'iqubal' //your user name
 
     publishedGroupId = 'com.iqubalashraf' //aaaa : the librairy group
     artifact = 'commonmethods' //BBBB : the library name
