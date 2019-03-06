@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
 
 android {
     compileSdkVersion 28
@@ -26,3 +27,32 @@ android {
 
 dependencies {
 }
+
+ext {
+    bintrayRepo = 'Methods-Helper' //the maven repo name (created on bintray)
+    bintrayName = 'commonmethods' //the name you want to give at your project on bintray
+    orgName = 'iqubalashraf' //your user name
+
+    publishedGroupId = 'com.iqubalashraf' //aaaa : the librairy group
+    artifact = 'commonmethods' //BBBB : the library name
+    libraryVersion = "0.0.1" //the librairy version
+
+    //the library will be : aaaa:BBBB:version
+
+    libraryName = 'AndroidHelper'
+    libraryDescription = 'This library gives you support of commonly used methods in android in bundle'
+
+    siteUrl = 'https://github.com/iqubalashraf/AllFunctionLibs'
+    gitUrl = 'https://github.com/iqubalashraf/AllFunctionLibs.git'
+
+    developerId = 'iqubalashraf'
+    developerName = 'Ashraf Iqubal'
+    developerEmail = 'ashrafiqubal@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply from: rootProject.file('gradle/install-v1.gradle')
+apply from: rootProject.file('gradle/bintray-android-v1.gradle')
